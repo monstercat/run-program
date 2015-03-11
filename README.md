@@ -1,6 +1,8 @@
 
 # run-program
 
+  [![Build Status](https://travis-ci.org/monstercat/run-program.svg)](https://travis-ci.org/monstercat/run-program)
+
   Simplem, high level wrapper around spawn
 
 ## Installation
