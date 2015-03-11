@@ -1,4 +1,4 @@
-var debug = require('debug')('media-packager:run-program')
+var debug = require('debug')('run-program')
 var dezalgo = require('dezalgo')
 var spawn = require('child_process').spawn
 
