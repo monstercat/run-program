@@ -27,6 +27,10 @@ module.exports = function (prgm, args, done) {
     debug(prgm + ' stderr %s', data)
   })
 
+  program.on('error', function (err) {
+    return done(err)
+  })
+
   program.on('close', function (code) {
     if (code !== 0) {
       debug('program close error %d', code)
