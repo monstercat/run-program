@@ -1,9 +1,10 @@
 var debug = require('debug')('run-program')
-var dezalgo = require('dezalgo')
+var once = require('once')
 var spawn = require('child_process').spawn
 
 module.exports = function (prgm, args, done) {
-  done = dezalgo(done)
+  done = once(done)
+
   debug(prgm + ': ' + (args.join(' ')))
   var std = {
     out: null,
@@ -28,7 +29,7 @@ module.exports = function (prgm, args, done) {
   })
 
   program.on('error', function (err) {
-    return done(err)
+    return done(err, std)
   })
 
   program.on('close', function (code) {
