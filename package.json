@@ -1,8 +1,8 @@
 {
   "name": "run-program",
   "description": "Simple spawn wrapper",
-  "keywords": [],
-  "version": "0.0.2",
+  "keywords": ["child_process", "process", "spawn"],
+  "version": "0.0.3",
   "repository": {
     "type": "git",
     "url": "git://github.com/jb55/run-program.git"
